@@ -1,0 +1,9 @@
+<h3>What app/website do you wish you had?</h3>
+<p>Please leave your email and an idea!</p>
+<p>By submitting an idea, you agree that your idea is public domain</p>
+
+<%= form_for(:idea , remote: true) do |f| %>
+  <%= text_field_tag (:email) %>
+  <%= text_field_tag (:name) %>
+  <%= text_area_tag :description, "content", size: "80x5" %>
+<% end %>
