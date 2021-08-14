@@ -11,6 +11,7 @@ ports:
 
 tasks:
   - init: >
+      source .setup.sh &&
       bundle install &&
       yarn install &&
       rake db:create
@@ -21,3 +22,4 @@ vscode:
     - rebornix.ruby
     - vscodevim.vim
     - remisa.shellman
+    - bung87.rails
